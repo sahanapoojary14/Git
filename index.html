@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS EC2 Demo</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f7fc;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+
+        .container{
+            background:#fff;
+            padding:40px;
+            width:450px;
+            text-align:center;
+            border-radius:12px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        h1{
+            color:#0073e6;
+            margin-bottom:15px;
+        }
+
+        p{
+            color:#555;
+            margin:10px 0;
+        }
+
+        button{
+            margin-top:20px;
+            padding:12px 20px;
+            background:#0073e6;
+            color:white;
+            border:none;
+            border-radius:6px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        button:hover{
+            background:#005bb5;
+        }
+
+        #message{
+            margin-top:20px;
+            font-weight:bold;
+            color:green;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🚀 AWS EC2 Demo</h1>
+
+    <p>This website is hosted on an Amazon EC2 Linux Instance.</p>
+
+    <p>Server: Amazon Linux 2023</p>
+
+    <button onclick="showMessage()">Click Me</button>
+
+    <p id="message"></p>
+</div>
+
+<script>
+function showMessage(){
+    document.getElementById("message").innerHTML =
+    "✅ Congratulations! Your website is running successfully on AWS EC2.";
+}
+</script>
+
+</body>
+</html>
